@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0C162098-7FE7-549E-CAAE-841B6C49B5CB" name="Gerentes">
+<createdBy>juancamilovilladagamboa</createdBy>
+<createdTime>2017-04-17 16:40:11 UTC</createdTime>
+<generatorID>0E4820AE-50D1-C207-0707-AE6805DB19DA</generatorID>
+<ownerDesignName>Tablas_Proyecto_BD</ownerDesignName>
+<engineerTo>
+<item key="2934A59C-D0A2-F8A1-F3CB-8800F07E4F9B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id" id="7A9501B7-DAFE-D2D9-BED3-C99163D96E0A">
+<createdBy>juancamilovilladagamboa</createdBy>
+<createdTime>2017-04-17 16:40:11 UTC</createdTime>
+<generatorID>2C302D64-4723-7453-CEBD-093AB9B0D7AE</generatorID>
+<ownerDesignName>Tablas_Proyecto_BD</ownerDesignName>
+<engineerTo>
+<item key="2934A59C-D0A2-F8A1-F3CB-8800F07E4F9B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>85ADF6A7-1691-80F4-0BDD-BE7FE84953CC</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nombre" id="28576EAE-12FC-D1BC-8B97-92CBC7DB5557">
+<createdBy>juancamilovilladagamboa</createdBy>
+<createdTime>2017-04-17 16:40:11 UTC</createdTime>
+<generatorID>843409C9-430A-BDFD-15A7-93659E00C470</generatorID>
+<ownerDesignName>Tablas_Proyecto_BD</ownerDesignName>
+<engineerTo>
+<item key="2934A59C-D0A2-F8A1-F3CB-8800F07E4F9B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E224B85A-CAC9-B07B-C7D3-A1812581A301</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Telefono" id="52A2C74C-6864-82ED-D20B-1B544A9211C1">
+<createdBy>juancamilovilladagamboa</createdBy>
+<createdTime>2017-04-17 16:40:11 UTC</createdTime>
+<generatorID>651D1282-375E-71E2-0C6B-005B459292CE</generatorID>
+<ownerDesignName>Tablas_Proyecto_BD</ownerDesignName>
+<engineerTo>
+<item key="2934A59C-D0A2-F8A1-F3CB-8800F07E4F9B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E224B85A-CAC9-B07B-C7D3-A1812581A301</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="68FD9530-3B84-EE6C-595D-55C1F83DEC90" name="Gerentes PK">
+<createdBy>juancamilovilladagamboa</createdBy>
+<createdTime>2017-04-17 16:40:11 UTC</createdTime>
+<generatorID>C2D9666F-90B4-FE8B-6796-3D853B8D7DD3</generatorID>
+<ownerDesignName>Tablas_Proyecto_BD</ownerDesignName>
+<engineerTo>
+<item key="2934A59C-D0A2-F8A1-F3CB-8800F07E4F9B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7A9501B7-DAFE-D2D9-BED3-C99163D96E0A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F1515B7F-F9CF-4E60-BAF7-399750BAF5DA" name="DependenciasActs">
+<createdBy>juancamilovilladagamboa</createdBy>
+<createdTime>2017-04-17 16:40:11 UTC</createdTime>
+<generatorID>C775AE6A-9AF3-E70A-9FA2-CA10020513CF</generatorID>
+<ownerDesignName>Tablas_Proyecto_BD</ownerDesignName>
+<engineerTo>
+<item key="2934A59C-D0A2-F8A1-F3CB-8800F07E4F9B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ActividadRequisitoId" id="F1BFFF2D-E977-4218-2E87-75C1B05EBA85">
+<createdBy>juancamilovilladagamboa</createdBy>
+<createdTime>2017-04-17 16:40:11 UTC</createdTime>
+<generatorID>253BFF2A-28F0-D848-2998-4A0E8C05C2D4</generatorID>
+<ownerDesignName>Tablas_Proyecto_BD</ownerDesignName>
+<engineerTo>
+<item key="2934A59C-D0A2-F8A1-F3CB-8800F07E4F9B" value="true"/>
+</engineerTo>
+<referedAttribute>A6F86B1A-3A90-EA7A-9CFC-E6AF382C1C18</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>85ADF6A7-1691-80F4-0BDD-BE7FE84953CC</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ActividadDependienteId" id="56FA7055-FC00-97DE-9A09-EB487ED06502">
+<createdBy>juancamilovilladagamboa</createdBy>
+<createdTime>2017-04-17 16:40:11 UTC</createdTime>
+<generatorID>CEDAF2CF-C098-E7E0-8474-70B6911108F3</generatorID>
+<ownerDesignName>Tablas_Proyecto_BD</ownerDesignName>
+<engineerTo>
+<item key="2934A59C-D0A2-F8A1-F3CB-8800F07E4F9B" value="true"/>
+</engineerTo>
+<referedAttribute>A6F86B1A-3A90-EA7A-9CFC-E6AF382C1C18</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>85ADF6A7-1691-80F4-0BDD-BE7FE84953CC</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0F169765-CD46-DF28-3F83-5313B4CEFBE3" name="PK DependenciasActs">
+<createdBy>juancamilovilladagamboa</createdBy>
+<createdTime>2017-04-17 16:40:11 UTC</createdTime>
+<generatorID>6A0E11D7-D407-C099-3E97-B781F31BF962</generatorID>
+<ownerDesignName>Tablas_Proyecto_BD</ownerDesignName>
+<engineerTo>
+<item key="2934A59C-D0A2-F8A1-F3CB-8800F07E4F9B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F1BFFF2D-E977-4218-2E87-75C1B05EBA85</attributeRef>
+<attributeRef>56FA7055-FC00-97DE-9A09-EB487ED06502</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

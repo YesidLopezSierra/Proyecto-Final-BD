@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="61E0F4A1-B4F6-B092-D7DD-0ABA3DA73D32" name="Proyectos">
+<createdBy>juancamilovilladagamboa</createdBy>
+<createdTime>2017-05-14 15:21:07 UTC</createdTime>
+<generatorID>5F84DDBB-8EE0-5083-EE01-7790023CD1B6</generatorID>
+<ownerDesignName>Tablas_Proyecto_BD</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id" id="16C0581A-C1C5-7B3B-3C7A-BDFC3E304613">
+<createdBy>juancamilovilladagamboa</createdBy>
+<createdTime>2017-05-14 15:21:07 UTC</createdTime>
+<generatorID>3C57ABC1-A866-D1AB-A107-C8DA51F353E4</generatorID>
+<ownerDesignName>Tablas_Proyecto_BD</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>85ADF6A7-1691-80F4-0BDD-BE7FE84953CC</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nombre" id="53178836-F9A6-D0A4-0B0B-9F6E0D01E0D3">
+<createdBy>juancamilovilladagamboa</createdBy>
+<createdTime>2017-05-14 15:21:07 UTC</createdTime>
+<generatorID>0105A970-7727-AFEE-016B-C3E8760ED454</generatorID>
+<ownerDesignName>Tablas_Proyecto_BD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Fecha_Inicio" id="F2224596-0BE9-BBA8-52EB-CF1A7F569A28">
+<createdBy>juancamilovilladagamboa</createdBy>
+<createdTime>2017-05-14 15:21:07 UTC</createdTime>
+<generatorID>A8822596-2B73-3106-006A-F9A8CA23740A</generatorID>
+<ownerDesignName>Tablas_Proyecto_BD</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>AC77775C-FB44-A0E8-71A0-5E147005DCFE</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Fecha_Fin" id="5DA0C456-75F0-314F-C66B-A8E180BD48F6">
+<createdBy>juancamilovilladagamboa</createdBy>
+<createdTime>2017-05-14 15:21:07 UTC</createdTime>
+<generatorID>C4399409-58BD-505E-BA8B-E5C9D35E133F</generatorID>
+<ownerDesignName>Tablas_Proyecto_BD</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>AC77775C-FB44-A0E8-71A0-5E147005DCFE</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Gerentes_Id" id="3E7A8A2B-9281-13C4-D72F-7FD85970795C">
+<createdBy>juancamilovilladagamboa</createdBy>
+<createdTime>2017-05-14 15:21:07 UTC</createdTime>
+<generatorID>36534A28-6189-3B45-0303-5FF24E69DE27</generatorID>
+<ownerDesignName>Tablas_Proyecto_BD</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>85ADF6A7-1691-80F4-0BDD-BE7FE84953CC</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="46E16CAA-0610-3348-FDD7-544F855C0F0C" referredColumn="C1FD334D-8F53-0B75-678B-53629F86D690"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F2B8C2BF-AAFA-49E0-BE09-59F6D1172D44" name="Proyectos_PK">
+<createdBy>juancamilovilladagamboa</createdBy>
+<createdTime>2017-05-14 15:21:07 UTC</createdTime>
+<generatorID>1E37079C-2831-EDF9-90B3-9E381E66A610</generatorID>
+<ownerDesignName>Tablas_Proyecto_BD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="16C0581A-C1C5-7B3B-3C7A-BDFC3E304613"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="99F52B74-3AB3-9CC5-08D9-02289764307A" name="Proyectos_Gerentes_FK">
+<createdBy>juancamilovilladagamboa</createdBy>
+<createdTime>2017-05-14 15:21:07 UTC</createdTime>
+<generatorID>1CE789D1-82D8-498F-5CF5-EDF761241B19</generatorID>
+<ownerDesignName>Tablas_Proyecto_BD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3E7A8A2B-9281-13C4-D72F-7FD85970795C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

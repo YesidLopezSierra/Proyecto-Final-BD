@@ -1,0 +1,181 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DA371599-81AA-6BBF-524E-2691CBE5B376" name="Actividades">
+<createdBy>juancamilovilladagamboa</createdBy>
+<createdTime>2017-04-17 16:40:11 UTC</createdTime>
+<generatorID>DDECA87F-AF69-32A4-7E84-980638722135</generatorID>
+<ownerDesignName>Tablas_Proyecto_BD</ownerDesignName>
+<engineerTo>
+<item key="2934A59C-D0A2-F8A1-F3CB-8800F07E4F9B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id" id="A6F86B1A-3A90-EA7A-9CFC-E6AF382C1C18">
+<createdBy>juancamilovilladagamboa</createdBy>
+<createdTime>2017-04-17 16:40:11 UTC</createdTime>
+<generatorID>1A7093E1-6DD0-9669-76C3-E098A2478BA6</generatorID>
+<ownerDesignName>Tablas_Proyecto_BD</ownerDesignName>
+<engineerTo>
+<item key="2934A59C-D0A2-F8A1-F3CB-8800F07E4F9B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>85ADF6A7-1691-80F4-0BDD-BE7FE84953CC</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Prioridad" id="F1CD132B-D429-B283-C95D-2770A2E61D71">
+<createdBy>juancamilovilladagamboa</createdBy>
+<createdTime>2017-04-17 16:40:11 UTC</createdTime>
+<generatorID>B4D29117-B707-2D8B-7B65-EF799E0D2037</generatorID>
+<ownerDesignName>Tablas_Proyecto_BD</ownerDesignName>
+<engineerTo>
+<item key="2934A59C-D0A2-F8A1-F3CB-8800F07E4F9B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E224B85A-CAC9-B07B-C7D3-A1812581A301</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Fecha Inicio" id="A0A4E99C-2FA3-12D6-AE06-6085EB250250">
+<createdBy>juancamilovilladagamboa</createdBy>
+<createdTime>2017-04-17 16:40:11 UTC</createdTime>
+<generatorID>2C415CBC-6205-D90D-A121-D9852AE52DE1</generatorID>
+<ownerDesignName>Tablas_Proyecto_BD</ownerDesignName>
+<engineerTo>
+<item key="2934A59C-D0A2-F8A1-F3CB-8800F07E4F9B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>AC77775C-FB44-A0E8-71A0-5E147005DCFE</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Fecha Fin" id="B23B352D-EBE7-5B7A-80CB-C42BD6F1684A">
+<createdBy>juancamilovilladagamboa</createdBy>
+<createdTime>2017-04-17 16:40:11 UTC</createdTime>
+<generatorID>C220EF4D-0266-264C-7BD7-DE87622B419D</generatorID>
+<ownerDesignName>Tablas_Proyecto_BD</ownerDesignName>
+<engineerTo>
+<item key="2934A59C-D0A2-F8A1-F3CB-8800F07E4F9B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>AC77775C-FB44-A0E8-71A0-5E147005DCFE</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Descripcion" id="2059112B-5944-81C5-C349-A06730FF393F">
+<createdBy>juancamilovilladagamboa</createdBy>
+<createdTime>2017-04-17 16:40:11 UTC</createdTime>
+<generatorID>991BE1A7-D7C9-FA8F-D12D-1519F49E3359</generatorID>
+<ownerDesignName>Tablas_Proyecto_BD</ownerDesignName>
+<engineerTo>
+<item key="2934A59C-D0A2-F8A1-F3CB-8800F07E4F9B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E224B85A-CAC9-B07B-C7D3-A1812581A301</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nombre" id="887E84DF-E34B-B5F6-7065-430AC30FFBD7">
+<createdBy>juancamilovilladagamboa</createdBy>
+<createdTime>2017-04-17 16:40:11 UTC</createdTime>
+<generatorID>EE444886-A0E0-D818-5CA1-025CA32891F3</generatorID>
+<ownerDesignName>Tablas_Proyecto_BD</ownerDesignName>
+<engineerTo>
+<item key="2934A59C-D0A2-F8A1-F3CB-8800F07E4F9B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E224B85A-CAC9-B07B-C7D3-A1812581A301</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Temporalidad" id="5AD2F6DF-1DC3-7534-49C1-1E4888BD0117">
+<createdBy>juancamilovilladagamboa</createdBy>
+<createdTime>2017-04-17 16:40:11 UTC</createdTime>
+<generatorID>32DF34C2-9665-4959-40BA-0E6201AE94BB</generatorID>
+<ownerDesignName>Tablas_Proyecto_BD</ownerDesignName>
+<engineerTo>
+<item key="2934A59C-D0A2-F8A1-F3CB-8800F07E4F9B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E224B85A-CAC9-B07B-C7D3-A1812581A301</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CantidadRepeticiones" id="9A7B8F7A-8727-B222-99E0-C18F1BB1D2A7">
+<createdBy>juancamilovilladagamboa</createdBy>
+<createdTime>2017-04-17 16:40:11 UTC</createdTime>
+<generatorID>776A5487-9A8B-8AE2-9402-8CFCDD6FECEF</generatorID>
+<ownerDesignName>Tablas_Proyecto_BD</ownerDesignName>
+<engineerTo>
+<item key="2934A59C-D0A2-F8A1-F3CB-8800F07E4F9B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>47F34665-EBD7-361E-ED8D-72E8978DC171</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Proyectos Id" id="EDCF5F01-6C0B-1645-7206-EEA049E8F484">
+<createdBy>juancamilovilladagamboa</createdBy>
+<createdTime>2017-04-17 16:40:11 UTC</createdTime>
+<generatorID>393A6289-DB3E-9915-FFE9-8CE7A8B86A16</generatorID>
+<ownerDesignName>Tablas_Proyecto_BD</ownerDesignName>
+<engineerTo>
+<item key="2934A59C-D0A2-F8A1-F3CB-8800F07E4F9B" value="true"/>
+</engineerTo>
+<referedAttribute>3C57ABC1-A866-D1AB-A107-C8DA51F353E4</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>85ADF6A7-1691-80F4-0BDD-BE7FE84953CC</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Estados Consecutivo" id="FC4CD281-D32B-35A5-97F5-9B1B356FBC0F">
+<createdBy>juancamilovilladagamboa</createdBy>
+<createdTime>2017-04-17 16:40:11 UTC</createdTime>
+<generatorID>55AF15F5-3D09-A740-02B4-734EC3B9AFDD</generatorID>
+<ownerDesignName>Tablas_Proyecto_BD</ownerDesignName>
+<engineerTo>
+<item key="2934A59C-D0A2-F8A1-F3CB-8800F07E4F9B" value="true"/>
+</engineerTo>
+<referedAttribute>0B0BB884-27A5-1E1E-FD71-625616A70EE4</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>85ADF6A7-1691-80F4-0BDD-BE7FE84953CC</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Categorias Id" id="04867687-09C5-3F40-142B-8CAF56F0FF40">
+<createdBy>juancamilovilladagamboa</createdBy>
+<createdTime>2017-04-17 16:40:11 UTC</createdTime>
+<generatorID>21A79088-5638-F32D-BAC4-620D53CC4609</generatorID>
+<ownerDesignName>Tablas_Proyecto_BD</ownerDesignName>
+<engineerTo>
+<item key="2934A59C-D0A2-F8A1-F3CB-8800F07E4F9B" value="true"/>
+</engineerTo>
+<referedAttribute>917C2B2D-B3E7-793D-202F-2FA5AE5C9846</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>85ADF6A7-1691-80F4-0BDD-BE7FE84953CC</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="821C78E5-818C-7963-02B0-16D09F984627" name="Actividades PK">
+<createdBy>juancamilovilladagamboa</createdBy>
+<createdTime>2017-04-17 16:40:11 UTC</createdTime>
+<generatorID>C6B03AA9-6B69-44BD-4964-D34739B9A298</generatorID>
+<ownerDesignName>Tablas_Proyecto_BD</ownerDesignName>
+<engineerTo>
+<item key="2934A59C-D0A2-F8A1-F3CB-8800F07E4F9B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A6F86B1A-3A90-EA7A-9CFC-E6AF382C1C18</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

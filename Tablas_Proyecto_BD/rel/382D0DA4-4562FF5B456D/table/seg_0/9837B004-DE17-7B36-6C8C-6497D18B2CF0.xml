@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9837B004-DE17-7B36-6C8C-6497D18B2CF0" name="Estados">
+<createdBy>juancamilovilladagamboa</createdBy>
+<createdTime>2017-05-14 15:21:07 UTC</createdTime>
+<generatorID>DABD68F7-D9FA-CA0A-6F01-6044892C28E3</generatorID>
+<ownerDesignName>Tablas_Proyecto_BD</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Consecutivo" id="2C4A3A3E-D165-C6E9-5570-5149E0460133">
+<createdBy>juancamilovilladagamboa</createdBy>
+<createdTime>2017-05-14 15:21:07 UTC</createdTime>
+<generatorID>0B0BB884-27A5-1E1E-FD71-625616A70EE4</generatorID>
+<ownerDesignName>Tablas_Proyecto_BD</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>85ADF6A7-1691-80F4-0BDD-BE7FE84953CC</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nombre" id="54990C69-C59F-2CA7-EE2B-4B528600F53D">
+<createdBy>juancamilovilladagamboa</createdBy>
+<createdTime>2017-05-14 15:21:07 UTC</createdTime>
+<generatorID>3F79ED9D-BAB9-27EF-0822-3BBA1C0C3C1D</generatorID>
+<ownerDesignName>Tablas_Proyecto_BD</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E224B85A-CAC9-B07B-C7D3-A1812581A301</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Descripcion" id="59192206-1937-7FCF-306D-FBC31992C00B">
+<createdBy>juancamilovilladagamboa</createdBy>
+<createdTime>2017-05-14 15:21:07 UTC</createdTime>
+<generatorID>79F477B0-F761-755F-33C7-867B69D1F453</generatorID>
+<ownerDesignName>Tablas_Proyecto_BD</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E224B85A-CAC9-B07B-C7D3-A1812581A301</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9957FE46-21F1-DB83-C640-EA730A49799C" name="Estados_PK">
+<createdBy>juancamilovilladagamboa</createdBy>
+<createdTime>2017-05-14 15:21:07 UTC</createdTime>
+<generatorID>D0C281AA-0E4B-EAB8-1C0E-7347487F0931</generatorID>
+<ownerDesignName>Tablas_Proyecto_BD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2C4A3A3E-D165-C6E9-5570-5149E0460133"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

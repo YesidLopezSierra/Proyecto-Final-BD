@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Categorias_Categorias_FK" directorySegmentName="seg_0" id="BD65669C-9EED-A6D4-D883-1EC2C826BD63">
+<createdBy>juancamilovilladagamboa</createdBy>
+<createdTime>2017-04-17 16:40:11 UTC</createdTime>
+<generatorID>39125F6A-4499-5742-584F-058C8366EB43</generatorID>
+<ownerDesignName>Tablas_Proyecto_BD</ownerDesignName>
+<engineerTo>
+<item key="2934A59C-D0A2-F8A1-F3CB-8800F07E4F9B" value="true"/>
+</engineerTo>
+<targetPk>40E6D5CC-4CB1-55F2-61C3-405BA7A57B4C</targetPk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>73377E86-2B16-DDEF-F6F3-82E88E2BF394</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>73377E86-2B16-DDEF-F6F3-82E88E2BF394</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

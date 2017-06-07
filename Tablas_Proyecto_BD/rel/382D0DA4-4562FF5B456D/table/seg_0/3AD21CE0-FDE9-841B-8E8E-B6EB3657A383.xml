@@ -1,0 +1,192 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3AD21CE0-FDE9-841B-8E8E-B6EB3657A383" name="Actividades">
+<createdBy>juancamilovilladagamboa</createdBy>
+<createdTime>2017-05-14 15:21:07 UTC</createdTime>
+<generatorID>DA371599-81AA-6BBF-524E-2691CBE5B376</generatorID>
+<ownerDesignName>Tablas_Proyecto_BD</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id" id="BF9E1509-D8E8-1225-3D4A-322C6A81FC9B">
+<createdBy>juancamilovilladagamboa</createdBy>
+<createdTime>2017-05-14 15:21:07 UTC</createdTime>
+<generatorID>A6F86B1A-3A90-EA7A-9CFC-E6AF382C1C18</generatorID>
+<ownerDesignName>Tablas_Proyecto_BD</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>85ADF6A7-1691-80F4-0BDD-BE7FE84953CC</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Prioridad" id="55DCFAEC-7D63-2967-4667-0F269D9F8362">
+<createdBy>juancamilovilladagamboa</createdBy>
+<createdTime>2017-05-14 15:21:07 UTC</createdTime>
+<generatorID>F1CD132B-D429-B283-C95D-2770A2E61D71</generatorID>
+<ownerDesignName>Tablas_Proyecto_BD</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E224B85A-CAC9-B07B-C7D3-A1812581A301</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Fecha_Inicio" id="02726011-DE6B-17BC-87F5-403E61A87DD9">
+<createdBy>juancamilovilladagamboa</createdBy>
+<createdTime>2017-05-14 15:21:07 UTC</createdTime>
+<generatorID>A0A4E99C-2FA3-12D6-AE06-6085EB250250</generatorID>
+<ownerDesignName>Tablas_Proyecto_BD</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>AC77775C-FB44-A0E8-71A0-5E147005DCFE</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Fecha_Fin" id="C6D8C532-9EE5-D497-F98A-AD7CF6259061">
+<createdBy>juancamilovilladagamboa</createdBy>
+<createdTime>2017-05-14 15:21:07 UTC</createdTime>
+<generatorID>B23B352D-EBE7-5B7A-80CB-C42BD6F1684A</generatorID>
+<ownerDesignName>Tablas_Proyecto_BD</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>AC77775C-FB44-A0E8-71A0-5E147005DCFE</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Descripcion" id="FFF9ED84-9ED6-AD44-CC0B-06159DAFA29F">
+<createdBy>juancamilovilladagamboa</createdBy>
+<createdTime>2017-05-14 15:21:07 UTC</createdTime>
+<generatorID>2059112B-5944-81C5-C349-A06730FF393F</generatorID>
+<ownerDesignName>Tablas_Proyecto_BD</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E224B85A-CAC9-B07B-C7D3-A1812581A301</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nombre" id="E7C0E535-F7A6-5573-CC0D-A2A2B82FF9E4">
+<createdBy>juancamilovilladagamboa</createdBy>
+<createdTime>2017-05-14 15:21:07 UTC</createdTime>
+<generatorID>887E84DF-E34B-B5F6-7065-430AC30FFBD7</generatorID>
+<ownerDesignName>Tablas_Proyecto_BD</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E224B85A-CAC9-B07B-C7D3-A1812581A301</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Temporalidad" id="7AE9EC5F-C866-5A3F-8606-C83A7F272610">
+<createdBy>juancamilovilladagamboa</createdBy>
+<createdTime>2017-05-14 15:21:07 UTC</createdTime>
+<generatorID>5AD2F6DF-1DC3-7534-49C1-1E4888BD0117</generatorID>
+<ownerDesignName>Tablas_Proyecto_BD</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E224B85A-CAC9-B07B-C7D3-A1812581A301</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CantidadRepeticiones" id="FFBDE01B-CA19-8FF5-F20B-7C32001D272D">
+<createdBy>juancamilovilladagamboa</createdBy>
+<createdTime>2017-05-14 15:21:07 UTC</createdTime>
+<generatorID>9A7B8F7A-8727-B222-99E0-C18F1BB1D2A7</generatorID>
+<ownerDesignName>Tablas_Proyecto_BD</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>47F34665-EBD7-361E-ED8D-72E8978DC171</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Proyectos_Id" id="BEAB9098-11E2-99E6-CB75-861CFE878FC7">
+<createdBy>juancamilovilladagamboa</createdBy>
+<createdTime>2017-05-14 15:21:07 UTC</createdTime>
+<generatorID>EDCF5F01-6C0B-1645-7206-EEA049E8F484</generatorID>
+<ownerDesignName>Tablas_Proyecto_BD</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>85ADF6A7-1691-80F4-0BDD-BE7FE84953CC</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EF9882D6-95B3-ED98-57E0-FA30D88D561C" referredColumn="16C0581A-C1C5-7B3B-3C7A-BDFC3E304613"/>
+</associations>
+</Column>
+<Column name="Estados_Consecutivo" id="C2605237-CC4A-8911-2E86-F2470C89461F">
+<createdBy>juancamilovilladagamboa</createdBy>
+<createdTime>2017-05-14 15:21:07 UTC</createdTime>
+<generatorID>FC4CD281-D32B-35A5-97F5-9B1B356FBC0F</generatorID>
+<ownerDesignName>Tablas_Proyecto_BD</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>85ADF6A7-1691-80F4-0BDD-BE7FE84953CC</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9AE1F463-4FA4-94CB-4625-D8B5A1942E4E" referredColumn="2C4A3A3E-D165-C6E9-5570-5149E0460133"/>
+</associations>
+</Column>
+<Column name="Categorias_Id" id="690F535A-6FF1-786D-C874-D1ABB6C8D699">
+<createdBy>juancamilovilladagamboa</createdBy>
+<createdTime>2017-05-14 15:21:07 UTC</createdTime>
+<generatorID>04867687-09C5-3F40-142B-8CAF56F0FF40</generatorID>
+<ownerDesignName>Tablas_Proyecto_BD</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>85ADF6A7-1691-80F4-0BDD-BE7FE84953CC</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="05FC938A-8EAA-0685-5230-B23ABCBCB3FE" referredColumn="F47BC1C8-60B0-4C9B-A353-4EE91055730D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5A245E00-31C4-BD23-17F8-90FE9DD49262" name="Actividades_PK">
+<createdBy>juancamilovilladagamboa</createdBy>
+<createdTime>2017-05-14 15:21:07 UTC</createdTime>
+<generatorID>821C78E5-818C-7963-02B0-16D09F984627</generatorID>
+<ownerDesignName>Tablas_Proyecto_BD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BF9E1509-D8E8-1225-3D4A-322C6A81FC9B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="756BCC81-7943-1951-0A40-D58E6E9F32B4" name="Actividades_Categorias_FK">
+<createdBy>juancamilovilladagamboa</createdBy>
+<createdTime>2017-05-14 15:21:07 UTC</createdTime>
+<generatorID>21A79088-5638-F32D-BAC4-620D53CC4609</generatorID>
+<ownerDesignName>Tablas_Proyecto_BD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="690F535A-6FF1-786D-C874-D1ABB6C8D699"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D8C905AA-B08B-87EE-07AD-5DAAA66EEA27" name="Actividades_Estados_FK">
+<createdBy>juancamilovilladagamboa</createdBy>
+<createdTime>2017-05-14 15:21:07 UTC</createdTime>
+<generatorID>55AF15F5-3D09-A740-02B4-734EC3B9AFDD</generatorID>
+<ownerDesignName>Tablas_Proyecto_BD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C2605237-CC4A-8911-2E86-F2470C89461F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3BB2DBC5-C813-7FF0-CAFF-B4B069594995" name="Actividades_Proyectos_FK">
+<createdBy>juancamilovilladagamboa</createdBy>
+<createdTime>2017-05-14 15:21:07 UTC</createdTime>
+<generatorID>393A6289-DB3E-9915-FFE9-8CE7A8B86A16</generatorID>
+<ownerDesignName>Tablas_Proyecto_BD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BEAB9098-11E2-99E6-CB75-861CFE878FC7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,40 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<DomainFile class="oracle.dbtools.crest.model.design.DomainFileWrapper" fileName="Tablas_Proyecto_BD_Domains">
+   <domains>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="Integer_0_0_0" id="47F34665-EBD7-361E-ED8D-72E8978DC171">
+         <createdBy>juancamilovilladagamboa</createdBy>
+         <createdTime>2017-04-17 16:15:03 UTC</createdTime>
+         <ownerDesignName>Tablas_Proyecto_BD</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <fileName>Tablas_Proyecto_BD_Domains</fileName>
+         <logicalDatatype>LOGDT011</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_0_0_0" id="85ADF6A7-1691-80F4-0BDD-BE7FE84953CC">
+         <createdBy>juancamilovilladagamboa</createdBy>
+         <createdTime>2017-04-17 16:15:03 UTC</createdTime>
+         <ownerDesignName>Tablas_Proyecto_BD</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <fileName>Tablas_Proyecto_BD_Domains</fileName>
+         <logicalDatatype>LOGDT019</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="Date_0_0_0" id="AC77775C-FB44-A0E8-71A0-5E147005DCFE">
+         <createdBy>juancamilovilladagamboa</createdBy>
+         <createdTime>2017-04-17 16:15:03 UTC</createdTime>
+         <ownerDesignName>Tablas_Proyecto_BD</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <fileName>Tablas_Proyecto_BD_Domains</fileName>
+         <logicalDatatype>LOGDT007</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_30" id="E224B85A-CAC9-B07B-C7D3-A1812581A301">
+         <createdBy>juancamilovilladagamboa</createdBy>
+         <createdTime>2017-04-17 16:15:03 UTC</createdTime>
+         <ownerDesignName>Tablas_Proyecto_BD</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>30</dataTypeSize>
+         <fileName>Tablas_Proyecto_BD_Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+   </domains>
+</DomainFile>

@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Tablas_Proyecto_BD" id="870C8DDB-1170-F375-8F9B-A442DCF25496" version="3.5">
+<createdBy>juancamilovilladagamboa</createdBy>
+<createdTime>2017-04-17 16:09:15 UTC</createdTime>
+<ownerDesignName>Tablas_Proyecto_BD</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>870C8DDB-1170-F375-8F9B-A442DCF25496</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="206B8810-1EA1-64BC-AFC0-3405A013CB93">
+<designStoragePath>/Tablas_Proyecto_BD</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="870C8DDB-1170-F375-8F9B-A442DCF25496">
+<designStoragePath>/Users/juancamilovilladagamboa/Desktop/2017-I/Bases de Datos/Proyecto BD - 2017 - I/Tablas_Proyecto_BD</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
+</OSDM_Design>

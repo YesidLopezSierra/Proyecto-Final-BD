@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Actividades_Estados_FK" directorySegmentName="seg_0" id="55AF15F5-3D09-A740-02B4-734EC3B9AFDD">
+<createdBy>juancamilovilladagamboa</createdBy>
+<createdTime>2017-04-17 16:40:11 UTC</createdTime>
+<generatorID>10892C13-AB25-77A7-EFC4-C1C771515A52</generatorID>
+<ownerDesignName>Tablas_Proyecto_BD</ownerDesignName>
+<engineerTo>
+<item key="2934A59C-D0A2-F8A1-F3CB-8800F07E4F9B" value="true"/>
+</engineerTo>
+<sourcePk>D0C281AA-0E4B-EAB8-1C0E-7347487F0931</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>DABD68F7-D9FA-CA0A-6F01-6044892C28E3</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>DA371599-81AA-6BBF-524E-2691CBE5B376</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

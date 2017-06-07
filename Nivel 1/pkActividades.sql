@@ -1,0 +1,164 @@
+CREATE OR REPLACE PACKAGE pkActividades
+AS
+  PROCEDURE pInsertar(
+      ivID ACTIVIDADES.ID%TYPE,
+      ivPRIORIDAD ACTIVIDADES.PRIORIDAD%TYPE,
+      ivFECHA_INICIO ACTIVIDADES.FECHA_INICIO%TYPE,
+      ivFECHA_FIN ACTIVIDADES.FECHA_FIN%TYPE,
+      ivDESCRIPCION ACTIVIDADES.DESCRIPCION%TYPE,
+      ivNOMBRE ACTIVIDADES.NOMBRE%TYPE,
+      ivTEMPORALIDAD ACTIVIDADES.TEMPORALIDAD%TYPE,
+      ivCANTIDADREPETICIONES ACTIVIDADES.CANTIDADREPETICIONES%TYPE,
+      ivPROYECTOID ACTIVIDADES.PROYECTOS_ID%TYPE,
+      ivESTADOCONSECUTIVO ACTIVIDADES.ESTADOs_CONSECUTIVO%TYPE,
+      ivCATEGORIAID ACTIVIDADES.CATEGORIAS_ID%TYPE);
+  PROCEDURE pEliminar(
+      ivAct ACTIVIDADES.ID%TYPE);
+  FUNCTION fExiste(
+      ivAct ACTIVIDADES.ID%TYPE)
+    RETURN ACTIVIDADES.ID%TYPE;
+  PROCEDURE pModificar(
+      ivFILA ACTIVIDADES%ROWTYPE);
+  FUNCTION fConsultar(
+      ivIDAct ACTIVIDADES.ID%TYPE)
+    RETURN SYS_REFCURSOR;
+END pkActividades;
+/
+CREATE OR REPLACE PACKAGE BODY pkActividades
+AS
+  PROCEDURE pInsertar(
+      ivID ACTIVIDADES.ID%TYPE,
+      ivPRIORIDAD ACTIVIDADES.PRIORIDAD%TYPE,
+      ivFECHA_INICIO ACTIVIDADES.FECHA_INICIO%TYPE,
+      ivFECHA_FIN ACTIVIDADES.FECHA_FIN%TYPE,
+      ivDESCRIPCION ACTIVIDADES.DESCRIPCION%TYPE,
+      ivNOMBRE ACTIVIDADES.NOMBRE%TYPE,
+      ivTEMPORALIDAD ACTIVIDADES.TEMPORALIDAD%TYPE,
+      ivCANTIDADREPETICIONES ACTIVIDADES.CANTIDADREPETICIONES%TYPE,
+      ivPROYECTOID ACTIVIDADES.PROYECTOS_ID%TYPE,
+      ivESTADOCONSECUTIVO ACTIVIDADES.ESTADOs_CONSECUTIVO%TYPE,
+      ivCATEGORIAID ACTIVIDADES.CATEGORIAS_ID%TYPE)
+  IS
+  BEGIN
+    INSERT
+    INTO ACTIVIDADES VALUES
+      (
+        ivID,
+        ivPRIORIDAD,
+        ivFECHA_INICIO,
+        ivFECHA_FIN,
+        ivDESCRIPCION,
+        ivNOMBRE,
+        ivTEMPORALIDAD,
+        ivCANTIDADREPETICIONES,
+        ivPROYECTOID,
+        ivESTADOCONSECUTIVO,
+        ivCATEGORIAID
+      );
+  EXCEPTION
+  WHEN DUP_VAL_ON_INDEX THEN
+    RAISE_APPLICATION_ERROR(-20620, 'YA HAY UNA ACTIVIDAD REGISTRADA CON EL MISMO ID');
+  WHEN OTHERS THEN
+    RAISE_APPLICATION_ERROR(-20621,'Error al insertar una actividad. Funcion pInsertar nivel 1.' || SQLERRM);
+  END pInsertar;
+  PROCEDURE pEliminar
+    (
+      ivAct ACTIVIDADES.ID%TYPE
+    )
+  IS
+    V_ID_ACTIVIDAD ACTIVIDADES.ID%TYPE;
+  BEGIN
+    V_ID_ACTIVIDAD    := fExiste(ivAct);
+    IF(V_ID_ACTIVIDAD IS NULL) THEN
+      RAISE_APPLICATION_ERROR(-20622, 'LA ACTIVIDAD A BORRAR NO EXISTE');
+    ELSE
+      DELETE FROM ACTIVIDADES WHERE ACTIVIDADES.ID = ivAct;
+    END IF;
+  EXCEPTION
+  WHEN OTHERS THEN
+    RAISE_APPLICATION_ERROR(-20623,'Error al eliminar una actividad. Funcion pEliminar nivel 1.' || SQLERRM);
+  END pEliminar;
+  FUNCTION fExiste(
+      ivAct ACTIVIDADES.ID%TYPE)
+    RETURN ACTIVIDADES.ID%TYPE
+  IS
+    V_ID ACTIVIDADES.ID%TYPE;
+  BEGIN
+    SELECT C.ID INTO V_ID FROM ACTIVIDADES C WHERE C.ID = ivAct;
+    RETURN V_ID;
+  EXCEPTION
+  WHEN NO_DATA_FOUND THEN
+    RETURN NULL;
+  END fExiste;
+  FUNCTION fConsultar(
+      ivIDAct ACTIVIDADES.ID%TYPE)
+    RETURN SYS_REFCURSOR
+  IS
+    cuActividad sys_refcursor; 
+
+  BEGIN
+  open cuActividad for    SELECT *  FROM ACTIVIDADES WHERE ID = ivIDAct;
+    RETURN cuActividad;
+  EXCEPTION
+  WHEN NO_DATA_FOUND THEN
+    RAISE_APPLICATION_ERROR(-20601, 'No se encontro una actividad con el ID: ' || ivIDAct ||'. Error en la funcion fConsultar nivel 1.');
+  WHEN TOO_MANY_ROWS THEN
+    RAISE_APPLICATION_ERROR(-20602, 'La consulta por el ID: ' || ivIDAct || 'ha arrojado mas de un registro. Error en la funcion fConsultar nivel 1.');
+  WHEN OTHERS THEN
+    RAISE_APPLICATION_ERROR(-20604, 'Ha occurrido un error inesperado en la funcion fConsultar nivel 1.' || SQLERRM);
+  END fConsultar;
+  PROCEDURE pModificar(
+      ivFILA ACTIVIDADES%ROWTYPE)
+  IS
+  BEGIN
+    UPDATE ACTIVIDADES
+    SET 
+      PRIORIDAD            = NVL(ivFILA.PRIORIDAD,PRIORIDAD),
+      FECHA_INICIO         = NVL(ivFILA.FECHA_INICIO,FECHA_INICIO),
+      FECHA_FIN            = NVL(ivFILA.FECHA_FIN,FECHA_FIN),
+      DESCRIPCION          = NVL(ivFILA.DESCRIPCION,DESCRIPCION),
+      NOMBRE               = NVL(ivFILA.NOMBRE,NOMBRE),
+      TEMPORALIDAD         = NVL(ivFILA.TEMPORALIDAD,TEMPORALIDAD),
+      CANTIDADREPETICIONES = NVL(ivFILA.CANTIDADREPETICIONES,CANTIDADREPETICIONES),
+      PROYECTOS_ID         = NVL(ivFILA.PROYECTOS_ID,PROYECTOS_ID),
+      ESTADOS_CONSECUTIVO  = NVL(ivFILA.ESTADOS_CONSECUTIVO,ESTADOS_CONSECUTIVO),
+      CATEGORIAS_ID        = NVL(ivFILA.CATEGORIAS_ID,CATEGORIAS_ID)
+    WHERE ID               = NVL(ivFILA.ID,CATEGORIAS_ID);
+    IF ivFILA.PRIORIDAD   IS NULL THEN
+      RAISE_APPLICATION_ERROR (-20606, 'El parametro PRIORIDAD de la fila es nulo. Error en el procedimiento pModificar nivel 1.');
+    END IF;
+    IF ivFILA.FECHA_INICIO IS NULL THEN
+      RAISE_APPLICATION_ERROR (-20607, 'El parametro FECHA_INICIO de la fila es nulo. Error en el procedimiento pModificar nivel 1.');
+    END IF;
+    IF ivFILA.FECHA_FIN IS NULL THEN
+      RAISE_APPLICATION_ERROR (-20608, 'El parametro FECHA_FIN de la fila es nulo. Error en el procedimiento pModificar nivel 1.');
+    END IF;
+    IF ivFILA.DESCRIPCION IS NULL THEN
+      RAISE_APPLICATION_ERROR (-20609, 'El parametro DESCRIPCION de la fila es nulo. Error en el procedimiento pModificar nivel 1.');
+    END IF;
+    IF ivFILA.NOMBRE IS NULL THEN
+      RAISE_APPLICATION_ERROR (-20610, 'El parametro NOMBRE de la fila es nulo. Error en el procedimiento pModificar nivel 1.');
+    END IF;
+    IF ivFILA.TEMPORALIDAD IS NULL THEN
+      RAISE_APPLICATION_ERROR (-20611, 'El parametro TEMPORALIDAD de la fila es nulo. Error en el procedimiento pModificar nivel 1.');
+    END IF;
+    IF ivFILA.CANTIDADREPETICIONES IS NULL THEN
+      RAISE_APPLICATION_ERROR (-20612, 'El parametro CANTIDADREPETICIONES de la fila es nulo. Error en el procedimiento pModificar nivel 1.');
+    END IF;
+    IF ivFILA.PROYECTOS_ID IS NULL THEN
+      RAISE_APPLICATION_ERROR (-20613, 'El parametro PROYECTOID de la fila es nulo. Error en el procedimiento pModificar nivel 1.');
+    END IF;
+    IF ivFILA.ESTADOS_CONSECUTIVO IS NULL THEN
+      RAISE_APPLICATION_ERROR (-20614, 'El parametro ESTADOCONSECUTIVO de la fila es nulo. Error en el procedimiento pModificar nivel 1.');
+    END IF;
+    IF ivFILA.CATEGORIAS_ID IS NULL THEN
+      RAISE_APPLICATION_ERROR (-20615, 'El parametro CATEGORIAID de la fila es nulo. Error en el procedimiento pModificar nivel 1.');
+    END IF;
+  EXCEPTION
+  WHEN NO_DATA_FOUND THEN
+    RAISE_APPLICATION_ERROR(-20605, 'No se encontro una actividad con el ID: ' || ivFILA.ID ||' Para la cual modificar sus atributos. Error en la procedimiento pModificar nivel 1.');
+  WHEN OTHERS THEN
+    RAISE_APPLICATION_ERROR(-20616,'Ha occurrido un error inesperado en el procedimiento pModificar nivel 1.' || SQLERRM);
+  END pModificar;
+END pkActividades;
+/

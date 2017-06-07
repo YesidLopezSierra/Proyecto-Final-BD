@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="285C53A1-0144-307F-58CF-844620804648" name="Categorias">
+<createdBy>juancamilovilladagamboa</createdBy>
+<createdTime>2017-05-14 15:21:07 UTC</createdTime>
+<generatorID>73377E86-2B16-DDEF-F6F3-82E88E2BF394</generatorID>
+<ownerDesignName>Tablas_Proyecto_BD</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id" id="F47BC1C8-60B0-4C9B-A353-4EE91055730D">
+<createdBy>juancamilovilladagamboa</createdBy>
+<createdTime>2017-05-14 15:21:07 UTC</createdTime>
+<generatorID>917C2B2D-B3E7-793D-202F-2FA5AE5C9846</generatorID>
+<ownerDesignName>Tablas_Proyecto_BD</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>85ADF6A7-1691-80F4-0BDD-BE7FE84953CC</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nombre" id="F97D1812-5473-D77D-370D-8FF410F5BEFD">
+<createdBy>juancamilovilladagamboa</createdBy>
+<createdTime>2017-05-14 15:21:07 UTC</createdTime>
+<generatorID>FD55F69E-F96E-869E-D1AE-5DC01701A332</generatorID>
+<ownerDesignName>Tablas_Proyecto_BD</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E224B85A-CAC9-B07B-C7D3-A1812581A301</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Descripcion" id="BCF8C813-213E-99B5-F8F1-641677EC45F2">
+<createdBy>juancamilovilladagamboa</createdBy>
+<createdTime>2017-05-14 15:21:07 UTC</createdTime>
+<generatorID>69B627D3-4A44-ECC4-CC97-F276B7140DB3</generatorID>
+<ownerDesignName>Tablas_Proyecto_BD</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E224B85A-CAC9-B07B-C7D3-A1812581A301</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Categorias_Id" id="94503682-4B16-B93B-CB96-A2B37767B1D8">
+<createdBy>juancamilovilladagamboa</createdBy>
+<createdTime>2017-05-14 15:21:07 UTC</createdTime>
+<generatorID>CEBD51BB-49EE-34BC-75DF-3EF45CC7737E</generatorID>
+<ownerDesignName>Tablas_Proyecto_BD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>85ADF6A7-1691-80F4-0BDD-BE7FE84953CC</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BD06E383-0C7C-A39B-401C-02E65EC5D55B" referredColumn="F47BC1C8-60B0-4C9B-A353-4EE91055730D"/>
+</associations>
+</Column>
+<Column name="Peso" id="B1CA50C9-0E8B-7C7D-B725-5AF6F57C91BA">
+<createdBy>juancamilovilladagamboa</createdBy>
+<createdTime>2017-05-14 15:21:07 UTC</createdTime>
+<generatorID>8FE0169E-414C-776E-F7A2-58CE735593A8</generatorID>
+<ownerDesignName>Tablas_Proyecto_BD</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>85ADF6A7-1691-80F4-0BDD-BE7FE84953CC</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4A5F9756-E3A9-83BF-206C-48334265383D" name="Categorias_PK">
+<createdBy>juancamilovilladagamboa</createdBy>
+<createdTime>2017-05-14 15:21:07 UTC</createdTime>
+<generatorID>40E6D5CC-4CB1-55F2-61C3-405BA7A57B4C</generatorID>
+<ownerDesignName>Tablas_Proyecto_BD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F47BC1C8-60B0-4C9B-A353-4EE91055730D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F480D619-0733-38F0-9126-2C42AFA37F75" name="Categorias_Categorias_FK">
+<createdBy>juancamilovilladagamboa</createdBy>
+<createdTime>2017-05-14 15:21:07 UTC</createdTime>
+<generatorID>BD65669C-9EED-A6D4-D883-1EC2C826BD63</generatorID>
+<ownerDesignName>Tablas_Proyecto_BD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="94503682-4B16-B93B-CB96-A2B37767B1D8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

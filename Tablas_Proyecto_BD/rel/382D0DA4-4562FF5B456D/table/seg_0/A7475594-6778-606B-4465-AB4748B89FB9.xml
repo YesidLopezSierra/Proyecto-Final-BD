@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A7475594-6778-606B-4465-AB4748B89FB9" name="DependenciasActs">
+<createdBy>juancamilovilladagamboa</createdBy>
+<createdTime>2017-05-14 15:21:07 UTC</createdTime>
+<generatorID>F1515B7F-F9CF-4E60-BAF7-399750BAF5DA</generatorID>
+<ownerDesignName>Tablas_Proyecto_BD</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ActividadRequisitoId" id="669720DA-4F2C-E56B-9B44-886CFA427C17">
+<createdBy>juancamilovilladagamboa</createdBy>
+<createdTime>2017-05-14 15:21:07 UTC</createdTime>
+<generatorID>F1BFFF2D-E977-4218-2E87-75C1B05EBA85</generatorID>
+<ownerDesignName>Tablas_Proyecto_BD</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>85ADF6A7-1691-80F4-0BDD-BE7FE84953CC</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6BBE5F78-B50F-A130-2F97-AA3B83E6206F" referredColumn="BF9E1509-D8E8-1225-3D4A-322C6A81FC9B"/>
+</associations>
+</Column>
+<Column name="ActividadDependienteId" id="71577F3C-2505-5ADE-B8A0-59117ABB59D8">
+<createdBy>juancamilovilladagamboa</createdBy>
+<createdTime>2017-05-14 15:21:07 UTC</createdTime>
+<generatorID>56FA7055-FC00-97DE-9A09-EB487ED06502</generatorID>
+<ownerDesignName>Tablas_Proyecto_BD</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>85ADF6A7-1691-80F4-0BDD-BE7FE84953CC</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7C8A33F2-A884-AD08-1D60-123F0E73C734" referredColumn="BF9E1509-D8E8-1225-3D4A-322C6A81FC9B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="71EC9D4A-563E-782F-BC29-2EAB8ADA2334" name="DependenciasActs_PK">
+<createdBy>juancamilovilladagamboa</createdBy>
+<createdTime>2017-05-14 15:21:07 UTC</createdTime>
+<generatorID>0F169765-CD46-DF28-3F83-5313B4CEFBE3</generatorID>
+<ownerDesignName>Tablas_Proyecto_BD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="669720DA-4F2C-E56B-9B44-886CFA427C17"/>
+<colUsage columnID="71577F3C-2505-5ADE-B8A0-59117ABB59D8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9CB359D3-C4C5-3FDC-CC0D-798D168B3879" name="FK_ActividadDep">
+<createdBy>juancamilovilladagamboa</createdBy>
+<createdTime>2017-05-14 15:21:07 UTC</createdTime>
+<generatorID>253BFF2A-28F0-D848-2998-4A0E8C05C2D4</generatorID>
+<ownerDesignName>Tablas_Proyecto_BD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="669720DA-4F2C-E56B-9B44-886CFA427C17"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6EB5197C-7113-2BDC-D767-B94A3D4F9DBC" name="FK_ActividadDep1">
+<createdBy>juancamilovilladagamboa</createdBy>
+<createdTime>2017-05-14 15:21:07 UTC</createdTime>
+<generatorID>CEDAF2CF-C098-E7E0-8474-70B6911108F3</generatorID>
+<ownerDesignName>Tablas_Proyecto_BD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="71577F3C-2505-5ADE-B8A0-59117ABB59D8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
