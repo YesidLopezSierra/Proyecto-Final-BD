@@ -1,5 +1,5 @@
 Intenté hacerlo, pero no me sirvió y me rendí
-
+Error
 Orden de ejecucion:
 En la carpeta job, secuencias, ddl y trigger:
 1. tablas_proyecto_bd ó crearTablas (la diferencia es que el tablas proyecto inserta algunos datos y crea tablas, mientras que crear tablas sólo las crea) 
