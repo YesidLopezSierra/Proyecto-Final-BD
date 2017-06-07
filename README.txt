@@ -11,6 +11,7 @@ De las otras carpetas
 En la carpeta job, secuencias, ddl y trigger:
 6.Job.sql
 Opcional:
+error x2
 si se desean los triggers ejecutar 
 1.TablaTriggerDeleteActividades.sql
 2.TriggerDeleteActividades.sql
